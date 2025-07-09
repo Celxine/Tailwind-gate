@@ -10,229 +10,135 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
   </head>
-  <body class="overflow-x-hidden">
-    <!-- navbar -->
-
     <!-- Top Header -->
-    <div
-      class="flex justify-between items-center px-6 py-2 text-sm space-x-4 space-y-6 bg-gray-100"
-    >
-      <!-- Social Icons -->
-      <div class="flex space-x-4 cursor-pointer">
-        <img src="linkedIN.svg" alt="LinkedIn" class="w-5 h-5" />
-        <img src="twitter.svg" alt="Twitter" class="w-5 h-5" />
-        <img src="facebook.svg" alt="Facebook" class="w-5 h-5" />
-        <img src="youtube.svg" alt="YouTube" class="w-5 h-5" />
-        <img src="instagram.svg" alt="Instagram" class="w-5 h-5" />
-      </div>
-
-      <!-- Navigation -->
-      <!-- <div class="flex space-x-6 relative">
-       !-- Dropdown Wrapper -->
-        <div class="relative group cursor-pointer ml-100">
-          <!-- Menu title -->
-            <div class="group">
-                <h2 class="">Online Services ▾</h2>
-
-                <!-- Dropdown Menu -->
-                <div
-                    class="absolute left-0 mt-2 bg-white shadow-md rounded-md w-64 z-10 hidden group-hover:block"
-                >            <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white"
-                    >Apply For Employee Number</a
-                    >
-                    <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white"
-                    >Check For Your Contributions</a
-                    >
-                    <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white"
-                    >Pay Employee Contributions</a
-                    >
-                    <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white"
-                    >RSSB Clearance Certificate</a
-                    >
-                    <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white"
-                    >Kwivuza</a
-                    >
-                </div>
-            </div>
-        </div>
-
-        <!-- Publications -->
-        <h2 class="cursor-pointer text-gray-700 px-6">Publications</h2>
-      </div>
+  <div class="flex flex-wrap justify-between items-center px-4 sm:px-6 py-2 text-sm bg-gray-100 space-y-2 sm:space-y-0">
+    <div class="flex space-x-3 cursor-pointer">
+      <img src="linkedIN.svg" alt="LinkedIn" class="w-5 h-5" />
+      <img src="twitter.svg" alt="Twitter" class="w-5 h-5" />
+      <img src="facebook.svg" alt="Facebook" class="w-5 h-5" />
+      <img src="youtube.svg" alt="YouTube" class="w-5 h-5" />
+      <img src="instagram.svg" alt="Instagram" class="w-5 h-5" />
     </div>
 
-    <!-- RSSB Logo and Contact Section -->
-    <div class="flex justify-between items-center px-5 py-3">
-      <!-- RSSB Logo and Slogan -->
-      <div class="flex cursor-pointer items-center space-x-4">
-        <img src="rssb logo.png" alt="rssb logo" class=" px-3 w-50 h-30" />
-      </div>
-
-      <!-- Contact Info -->
-      <div class="flex space-x-12 text-sm text-gray-700 items-center">
-        <!-- Phone -->
-        <div class="flex items-center space-x-2">
-          <div class="bg-gray-400 p-2 rounded-full">📞</div>
-          <div>
-            <h3 class="text-blue-900 font-bold">4044</h3>
-            <p>Toll free lines</p>
-          </div>
+    <div class="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-6">
+      <div class="relative group cursor-pointer">
+        <h2 class="">Online Services ▾</h2>
+        <div class="absolute left-0 mt-2 bg-white shadow-md rounded-md w-64 z-10 hidden group-hover:block">
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white">Apply For Employee Number</a>
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white">Check For Your Contributions</a>
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white">Pay Employee Contributions</a>
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white">RSSB Clearance Certificate</a>
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white">Kwivuza</a>
         </div>
+      </div>
+      <h2 class="cursor-pointer text-gray-700">Publications</h2>
+    </div>
+  </div>
 
-        <!-- Email -->
-        <div class="flex items-center space-x-2">
-          <div class="bg-gray-400 p-2  rounded-full">✉️</div>
-          <div>
-            <h3 class="text-blue-900 font-bold">info@rssb.rw</h3>
-            <p>Reach to us</p>
-          </div>
+  <!-- Logo and Contact Info -->
+  <div class="flex flex-col lg:flex-row justify-between items-center px-5 py-3 space-y-4 lg:space-y-0">
+    <div class="flex cursor-pointer items-center space-x-4">
+      <img src="rssb logo.png" alt="rssb logo" class="px-3 w-40 h-auto" />
+    </div>
+
+    <div class="flex flex-col sm:flex-row sm:space-x-12 text-sm text-gray-700 items-start sm:items-center space-y-4 sm:space-y-0">
+      <div class="flex items-center space-x-2">
+        <div class="bg-gray-400 p-2 rounded-full">📞</div>
+        <div>
+          <h3 class="text-blue-900 font-bold">4044</h3>
+          <p>Toll free lines</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-2">
+        <div class="bg-gray-400 p-2 rounded-full">✉️</div>
+        <div>
+          <h3 class="text-blue-900 font-bold">info@rssb.rw</h3>
+          <p>Reach to us</p>
         </div>
       </div>
     </div>
+  </div>
 
-  
-
-    <!-- Navigation Bar -->
-
-<div class="justify-center md:flex sticky top-0 z-20  mx-auto">
-<nav class="flex font-semibold text-white list-none pl-10 pr-90 bg-blue-900 rounded-md items-center">
-    <li class="cursor-pointer hover:underline decoration-yellow-500 py-3 px-4 py-8">HOME</li>
-    <li class="cursor-pointer hover:underline decoration-yellow-500 py-3 px-4">SCHEMES</li>
-    <li class="cursor-pointer hover:underline decoration-yellow-500 py-3 px-4">INVESTMENT</li>
-    <li class="cursor-pointer hover:underline decoration-yellow-500 py-3 px-4">MANAGEMENT</li>
-    <li class="cursor-pointer hover:underline decoration-yellow-500 py-3 px-4">ABOUT</li>
-    <li class="cursor-pointer hover:underline decoration-yellow-500 py-3 px-4">CAREERS</li>
-    <li class="cursor-pointer hover:underline decoration-yellow-500 py-3 px-4">NEW & EVENTS</li>
-    
-
-
-</nav>
+  <!-- Navigation Bar -->
+  <div class="w-full sticky top-0 z-20">
+  <nav class="flex flex-wrap justify-center font-semibold text-white bg-blue-900 rounded-md px-4 py-2 list-none">
+    <li class="cursor-pointer underline decoration-yellow-400 px-4 py-2">HOME</li>
+    <li class="cursor-pointer hover:underline decoration-yellow-400 px-4 py-2">SCHEMES</li>
+    <li class="cursor-pointer hover:underline decoration-yellow-400 px-4 py-2">INVESTMENT</li>
+    <li class="cursor-pointer hover:underline decoration-yellow-400 px-4 py-2">MANAGEMENT</li>
+    <li class="cursor-pointer hover:underline decoration-yellow-400 px-4 py-2">ABOUT</li>
+    <li class="cursor-pointer hover:underline decoration-yellow-400 px-4 py-2">CAREERS</li>
+    <li class="cursor-pointer hover:underline decoration-yellow-400 px-4 py-2">NEW & EVENTS</li>
+  </nav>
 </div>
 
 
-    <!-- Main Content Wrapper -->
-    <div class="relative">
-      <!-- Hero Section -->
-      <div class="relative">
-        <!-- Background Image -->
-        <!-- <div class=""> -->
-          <img
-            class="w-full h-200"
-            src="mom and child.jpeg"
-            alt="Mother and child"
-                     />
-          <!-- Gradient overlay -->
-          <div
-            class="absolute bg-gradient-to-r from-white via-white/90 to-transparent h-100"
-          ></div>
-        <!-- </div> -->
+  <!-- Hero Section -->
+  <div class="relative">
+    <img class="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover" src="mom and child.jpeg" alt="Mother and child" />
+    <div class="absolute bg-gradient-to-r from-white via-white/90 to-transparent inset-0 h-full w-full"></div>
 
-        <!-- Text Content -->
-        <div
-          class="relative max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:py-32"
-        >
-          <div class="w-full -mt-[30%] ml-[4%]">
-            <h1 class="text-4xl text-gray-900">
-              Enjoy your
-              <span class="text-yellow-500">Maternity Leave</span> with your
-              full <br> salary.
-            </h1>
-            <p class="mt-4 text-xl text-gray-600">MATERNITY LEAVE</p>
-            <div class="">
-             <button class="hover:text-white font-medium py-3 px-6 rounded-md border border-blue-800 text-blue-800 hover:bg-blue-800">
-   Learn More
-             </button>
-             
-             
-          </div>
-        </div>
-      </div>
-
-      <!-- Stats / Cards Section -->
-      <section class="bg-gray-100 py-12 relative">
-        <div class="max-w-7xl mx-auto px-9 sm:px-6 lg:px-8 -mt-80">
-          <div
-            class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 text-left"
-          >
-            <!-- Card 1: Member First -->
-            <div class="bg-white h p-6 rounded-lg shadow-md transition transform hover:-translate-y-2 cursor-pointer"
-            >
-             <h3 class="font-bold text-gray-900">Member First</h3>
-              <p class="text-sm text-gray-600">
-                <span class="font-bold text-blue-800">13 Million</span> of
-                Rwandans are covered by RSSB services.
-              </p>
-            </div>
-
-            <!-- Card 2: Experience -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md transition transform hover:-translate-y-2 cursor-pointer"
-            >
-              
-             <h3 class="font-bold text-gray-900">Experience</h3>
-              <p class="text-sm text-gray-600">
-                <span class="font-bold text-blue-800">60 years</span> of service
-                for your safety and well-being.
-              </p>
-            </div>
-
-            <!-- Card 3: Branches -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md transition transform hover:-translate-y-2 cursor-pointer"
-            >
-              
-        
-              <h3 class="font-bold text-gray-900">Branches</h3>
-              <p class="text-sm text-gray-600">
-                Our services decentralized in
-                <span class="font-bold text-blue-800">30 branches</span> for
-                your satisfaction.
-              </p>
-            </div>
-
-            <!-- Card 4: Data Driven -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md transition transform hover:-translate-y-2 cursor-pointer"
-            >
-              
-              <h3 class="font-bold text-gray-900">Data Driven</h3>
-              <p class="text-sm text-gray-600">
-                Learning from our data to improve the services offered to our
-                members.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- Hero Text -->
+    <div class="absolute top-1/2 transform -translate-y-1/2 left-6 sm:left-12 max-w-xl">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-900">
+        Enjoy your
+        <span class="text-yellow-500">Maternity Leave</span> with your <br> full salary.
+      </h1>
+      <p class="mt-4 text-lg sm:text-xl text-gray-600">MATERNITY LEAVE</p>
+      <button class="mt-4 hover:text-white font-medium py-2 px-4 sm:py-3 sm:px-6 rounded-md border border-blue-800 text-blue-800 hover:bg-blue-800">
+        Learn More
+      </button>
     </div>
+  </div>
 
-
-
-    <!-- Mission Statement -->
-    <section class="bg-gray-100 py-12 -mt-70 relative">
-      <div class="max-w-4xl mx-auto px-4 text-center">
-        <p class="text-3xl font-bold text-gray-600 leading-relaxed">
-          Optimistic and forward-looking <br> agent of central government, working to
-          achieve <br> <span class="text-blue-900"> the financial security and health of all <br> Rwandans.</span>
-        </p>
+  <!-- Cards Section -->
+  <section class="bg-gray-100 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md transition transform hover:-translate-y-2 cursor-pointer">
+          <h3 class="font-bold text-gray-900">Member First</h3>
+          <p class="text-sm text-gray-600">
+            <span class="font-bold text-blue-800">13 Million</span> of Rwandans are covered by RSSB services.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md transition transform hover:-translate-y-2 cursor-pointer">
+          <h3 class="font-bold text-gray-900">Experience</h3>
+          <p class="text-sm text-gray-600">
+            <span class="font-bold text-blue-800">60 years</span> of service for your safety and well-being.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md transition transform hover:-translate-y-2 cursor-pointer">
+          <h3 class="font-bold text-gray-900">Branches</h3>
+          <p class="text-sm text-gray-600">
+            Our services decentralized in <span class="font-bold text-blue-800">30 branches</span> for your satisfaction.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md transition transform hover:-translate-y-2 cursor-pointer">
+          <h3 class="font-bold text-gray-900">Data Driven</h3>
+          <p class="text-sm text-gray-600">
+            Learning from our data to improve the services offered to our members.
+          </p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Social Protection Schemes -->
+  <!-- Mission Statement -->
+  <section class="bg-gray-100 py-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-600 leading-relaxed">
+        Optimistic and forward-looking <br>
+        agent of central government, working to achieve <br>
+        <span class="text-blue-900"> the financial security and health of all <br> Rwandans.</span>
+      </p>
+    </div>
+  </section>
+
+   
     <section class="bg-white py-16">
       <div class="max-w-7xl relative">
 
-        <div class="ml-110 -mb-3 mt-12 w-10 h-1 bg-yellow-500"></div>
+        <div class="ml-110 -mb-4 mt-12 w-10 h-1 bg-yellow-500"></div>
 
         <h2 class="text-xl font-bold text-center text-blue-800 mb-12">
           SOCIAL PROTECTION SCHEMES
@@ -303,9 +209,7 @@
             <p class="text-gray-600 group-hover:text-white">Start Early And Reap The Rewards.</p>
           </div>
 
-          <div
-            class="bg-pink-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow hover:bg-[url('./matern.jpeg')] bg-cover group"
-          >
+<div class="bg-pink-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow hover:bg-[url('./matern.jpeg')] bg-cover group">
             <img
               src="maternity leave.svg"
               alt="maternity"
@@ -322,7 +226,6 @@
       </div>
     </section>
 
-    <!-- Imisanzu Section -->
     <section class="text-gray-700 py-16">
       <div
         class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
@@ -355,7 +258,7 @@
       </div>
     </section>
 
-    <!-- Digital Transformation -->
+    
     <section class="bg-gray-100 py-16">
       <div class="max-w-7xl mx-auto px-4">
         <div class="px-8">
@@ -422,7 +325,7 @@
       </div>
     </section>
 
-    <!-- CEO Quote -->
+   
     <section class="bg-white py-16 ml-1">
       <div class="px-4">
         <div class="p-8 border-l-2 border-yellow-500 bg-white">
@@ -461,21 +364,15 @@
     <!-- News & Events -->
     <section class="py-16">
       <div class="mx-auto px-4">
-          <div class="ml-110 -mb-3 mt-12 w-10 h-1 bg-yellow-500"></div>
+          <div class="ml-110 -mb-6 mt-12 w-10 h-1 bg-yellow-500"></div>
         <h2 class="text-3xl font-bold text-center text-blue-800 mb-12 ">
           NEWS & EVENTS
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Card 1 -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer"
-          >
-            <img
-              src="7months ago.jpeg"
-              alt=""
-              class="w-full h-48 object-cover transform transition duration-300 hover:scale-105"
-            />
+       
+          <div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer">
+            <img src="7months ago.jpeg" alt="" class="w-full h-48 object-cover transform transition duration-300 hover:scale-105"/>
             <div class="p-6">
               <p class="text-sm text-gray-500 mb-2 select-none">7 months ago</p>
               <h3 class="text-xl font-bold text-gray-800 mb-3 select-none">
@@ -486,18 +383,14 @@
                 Security Board (RSSB) engaged with the private sector to discuss
                 upcoming pension reforms,h...
               </p>
-              <button
-                class="text-blue-900 hover:text-blue-800 font-sm select-auto"
-              >
+              <button class="text-blue-900 hover:text-blue-800 font-sm select-auto">
                 Read more...
               </button>
             </div>
           </div>
 
-          <!-- Card 2 -->
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer"
-          >
+         
+          <div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer">
             <img
               src="year ago.jpeg"
               alt=""
@@ -521,7 +414,7 @@
             </div>
           </div>
 
-          <!-- Card 3 -->
+        
           <div
             class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer"
           >
@@ -541,7 +434,7 @@
                 upcoming pension reforms,h...
               </p>
               <button
-                class="text-blue-900 hover:text-blue-800 border border-blue-800 px-3 py-1 rounded font-sm select-auto"
+                class="text-blue-900 hover:text-blue-800 font-sm select-auto"
               >
                 Read more...
               </button>
