@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <!-- <link
       href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css"
       rel="stylesheet"
-    />
+    /> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- navbar -->
 
     <!-- Top Header -->
@@ -27,40 +28,42 @@
 
       <!-- Navigation -->
       <!-- <div class="flex space-x-6 relative">
-        <!-- Dropdown Wrapper -->
-        <div class="relative group cursor-pointer">
+       !-- Dropdown Wrapper -->
+        <div class="relative group cursor-pointer ml-100">
           <!-- Menu title -->
-          <h2 class="text-gray-700">Online Services ▾</h2>
+            <div class="group">
+                <h2 class="">Online Services ▾</h2>
 
-          <!-- Dropdown Menu -->
-          <div
-            class="absolute left-0 mt-2 bg-white shadow-md rounded-md w-64 z-10  group-hover:block"
-          >            <a
-              href="#"
-              class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white"
-              >Apply For Employee Number</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white"
-              >Check For Your Contributions</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white"
-              >Pay Employee Contributions</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white"
-              >RSSB Clearance Certificate</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white"
-              >Kwivuza</a
-            >
-          </div>
+                <!-- Dropdown Menu -->
+                <div
+                    class="absolute left-0 mt-2 bg-white shadow-md rounded-md w-64 z-10 hidden group-hover:block"
+                >            <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white"
+                    >Apply For Employee Number</a
+                    >
+                    <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white"
+                    >Check For Your Contributions</a
+                    >
+                    <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white"
+                    >Pay Employee Contributions</a
+                    >
+                    <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white"
+                    >RSSB Clearance Certificate</a
+                    >
+                    <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-600 hover:bg-blue-700 hover:text-white"
+                    >Kwivuza</a
+                    >
+                </div>
+            </div>
         </div>
 
         <!-- Publications -->
@@ -72,14 +75,14 @@
     <div class="flex justify-between items-center px-5 py-3">
       <!-- RSSB Logo and Slogan -->
       <div class="flex cursor-pointer items-center space-x-4">
-        <img src="rssb logo.png" alt="rssb logo" class="w-25 h-auto" />
+        <img src="rssb logo.png" alt="rssb logo" class=" px-3 w-50 h-30" />
       </div>
 
       <!-- Contact Info -->
       <div class="flex space-x-12 text-sm text-gray-700 items-center">
         <!-- Phone -->
         <div class="flex items-center space-x-2">
-          <div class="bg-gray-100 p-2 rounded-full">📞</div>
+          <div class="bg-gray-400 p-2 rounded-full">📞</div>
           <div>
             <h3 class="text-blue-900 font-bold">4044</h3>
             <p>Toll free lines</p>
@@ -88,7 +91,7 @@
 
         <!-- Email -->
         <div class="flex items-center space-x-2">
-          <div class="w-5 rounded-full">✉️</div>
+          <div class="bg-gray-400 p-2  rounded-full">✉️</div>
           <div>
             <h3 class="text-blue-900 font-bold">info@rssb.rw</h3>
             <p>Reach to us</p>
@@ -101,15 +104,15 @@
 
     <!-- Navigation Bar -->
 
-<div>
-<nav class="sticky flex font-semibold text-white list-none pl-2 p pr-9 bg-blue-900 rounded-md items-center">
-    <li class="cursor-pointer hover:border-b-2 border-yellow-500 py-3 px-4">HOME</li>
-      <li class="cursor-pointer hover:border-b-2 border-yellow-500 py-3 px-4">SCHEMES</li>
-        <li class="cursor-pointer hover:border-b-2 border-yellow-500 py-3 px-4">INVESTMENT</li>
-          <li class="cursor-pointer hover:border-b-2 border-yellow-500 py-3 px-4">MANAGEMENT</li>
-            <li class="cursor-pointer hover:border-b-2 border-yellow-500 py-3 px-4">ABOUT</li>
-              <li class="cursor-pointer hover:border-b-2 border-yellow-500 py-3 px-4">CAREERS</li>
-                <li class="cursor-pointer hover:border-b-2 border-yellow-500 py-3 px-4">NEW & EVENTS</li>
+<div class="justify-center md:flex sticky top-0 z-20  mx-auto">
+<nav class="flex font-semibold text-white list-none pl-10 pr-90 bg-blue-900 rounded-md items-center">
+    <li class="cursor-pointer hover:underline decoration-yellow-500 py-3 px-4 py-8">HOME</li>
+    <li class="cursor-pointer hover:underline decoration-yellow-500 py-3 px-4">SCHEMES</li>
+    <li class="cursor-pointer hover:underline decoration-yellow-500 py-3 px-4">INVESTMENT</li>
+    <li class="cursor-pointer hover:underline decoration-yellow-500 py-3 px-4">MANAGEMENT</li>
+    <li class="cursor-pointer hover:underline decoration-yellow-500 py-3 px-4">ABOUT</li>
+    <li class="cursor-pointer hover:underline decoration-yellow-500 py-3 px-4">CAREERS</li>
+    <li class="cursor-pointer hover:underline decoration-yellow-500 py-3 px-4">NEW & EVENTS</li>
     
 
 
@@ -122,66 +125,49 @@
       <!-- Hero Section -->
       <div class="relative">
         <!-- Background Image -->
-        <div class="absolute inset-0">
+        <!-- <div class=""> -->
           <img
-            class="w-full h-22 object-cover"
+            class="w-full h-200"
             src="mom and child.jpeg"
             alt="Mother and child"
                      />
           <!-- Gradient overlay -->
           <div
-            class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"
+            class="absolute bg-gradient-to-r from-white via-white/90 to-transparent h-100"
           ></div>
-        </div>
+        <!-- </div> -->
 
         <!-- Text Content -->
         <div
-          class="relative max-w-7xl mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32"
+          class="relative max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:py-32"
         >
-          <div class="w-full lg:w-1/2">
-            <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+          <div class="w-full -mt-[30%] ml-[4%]">
+            <h1 class="text-4xl text-gray-900">
               Enjoy your
               <span class="text-yellow-500">Maternity Leave</span> with your
-              full salary.
+              full <br> salary.
             </h1>
             <p class="mt-4 text-xl text-gray-600">MATERNITY LEAVE</p>
-            <div class="mt-8">
-              <a
-                href="#"
-                class="inline-block bg-[#1e3a8a] text-white font-medium py-3 px-6 rounded-md hover:bg-blue-800"
-              >
-                Learn More
-              </a>
-            </div>
+            <div class="">
+             <button class="hover:text-white font-medium py-3 px-6 rounded-md border border-blue-800 text-blue-800 hover:bg-blue-800">
+   Learn More
+             </button>
+             
+             
           </div>
         </div>
       </div>
 
       <!-- Stats / Cards Section -->
-      <section class="bg-gray-100 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section class="bg-gray-100 py-12 relative">
+        <div class="max-w-7xl mx-auto px-9 sm:px-6 lg:px-8 -mt-80">
           <div
             class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 text-left"
           >
             <!-- Card 1: Member First -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md transition transform hover:-translate-y-2 cursor-pointer"
+            <div class="bg-white h p-6 rounded-lg shadow-md transition transform hover:-translate-y-2 cursor-pointer"
             >
-              <svg
-                class="h-8 w-8 text-gray-600 mb-4"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
-                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.124-1.282-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.653.124-1.282.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                />
-              </svg>
-              <h3 class="font-bold text-gray-900">Member First</h3>
+             <h3 class="font-bold text-gray-900">Member First</h3>
               <p class="text-sm text-gray-600">
                 <span class="font-bold text-blue-800">13 Million</span> of
                 Rwandans are covered by RSSB services.
@@ -192,21 +178,8 @@
             <div
               class="bg-white p-6 rounded-lg shadow-md transition transform hover:-translate-y-2 cursor-pointer"
             >
-              <svg
-                class="h-8 w-8 text-gray-600 mb-4"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
-                  d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-                />
-              </svg>
-              <h3 class="font-bold text-gray-900">Experience</h3>
+              
+             <h3 class="font-bold text-gray-900">Experience</h3>
               <p class="text-sm text-gray-600">
                 <span class="font-bold text-blue-800">60 years</span> of service
                 for your safety and well-being.
@@ -217,20 +190,8 @@
             <div
               class="bg-white p-6 rounded-lg shadow-md transition transform hover:-translate-y-2 cursor-pointer"
             >
-              <svg
-                class="h-8 w-8 text-gray-600 mb-4"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
-                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                />
-              </svg>
+              
+        
               <h3 class="font-bold text-gray-900">Branches</h3>
               <p class="text-sm text-gray-600">
                 Our services decentralized in
@@ -243,20 +204,7 @@
             <div
               class="bg-white p-6 rounded-lg shadow-md transition transform hover:-translate-y-2 cursor-pointer"
             >
-              <svg
-                class="h-8 w-8 text-gray-600 mb-4"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
-                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                />
-              </svg>
+              
               <h3 class="font-bold text-gray-900">Data Driven</h3>
               <p class="text-sm text-gray-600">
                 Learning from our data to improve the services offered to our
@@ -271,103 +219,102 @@
 
 
     <!-- Mission Statement -->
-    <section class="bg-gray-100 py-12">
+    <section class="bg-gray-100 py-12 -mt-70 relative">
       <div class="max-w-4xl mx-auto px-4 text-center">
-        <p class="text-lg text-gray-700 leading-relaxed">
-          Optimistic and forward-looking agent of central government, working to
-          achieve the financial security and health of all Rwandans.
+        <p class="text-3xl font-bold text-gray-600 leading-relaxed">
+          Optimistic and forward-looking <br> agent of central government, working to
+          achieve <br> <span class="text-blue-900"> the financial security and health of all <br> Rwandans.</span>
         </p>
       </div>
     </section>
 
     <!-- Social Protection Schemes -->
     <section class="bg-white py-16">
-      <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+      <div class="max-w-7xl relative">
+
+        <div class="ml-110 -mb-3 mt-12 w-10 h-1 bg-yellow-500"></div>
+
+        <h2 class="text-xl font-bold text-center text-blue-800 mb-12">
           SOCIAL PROTECTION SCHEMES
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div
-            class="bg-blue-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow"
-          >
+          <div class="bg-blue-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow hover:bg-[url('./dignity.jpeg')] bg-cover group">
             <img
               src="Pension scheme.svg"
               alt="pension"
               class="w-16 h-16 mx-auto mb-4"
             />
-            <h3 class="text-xl font-semibold text-gray-700 mb-2">
+            <h3 class="text-xl font-semibold group-hover:text-yellow-400 text-gray-700 mb-2 ">
               PENSION SCHEMES
             </h3>
-            <p class="text-gray-600">Retire With Dignity</p>
+            <p class="text-gray-600 group-hover:text-white">Retire With Dignity</p>
           </div>
 
-          <div
-            class="bg-red-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow"
-          >
+          <div class="bg-red-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow hover:bg-[url('./occupational.jpeg')] bg-cover group">
             <img
               src="Occupational hazards.svg"
               alt="Occupational"
               class="w-16 h-16 mx-auto mb-4"
             />
-            <h3 class="text-xl font-semibold text-gray-700 mb-2">
+            <h3 class="text-xl font-semibold group-hover:text-yellow-400 text-gray-700 mb-2">
               OCCUPATIONAL HAZARDS
             </h3>
-            <p class="text-gray-600">We Are Here For You</p>
+            <p class="text-gray-600 group-hover:text-white">We Are Here For You</p>
           </div>
 
           <div
-            class="bg-green-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow"
+            class="bg-green-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow hover:bg-[url('./medical.jpeg')] bg-cover group"
           >
             <img
               src="Medical scheme.svg"
               alt=""
               class="w-16 h-16 mx-auto mb-4"
             />
-            <h3 class="text-xl font-semibold text-gray-700 mb-2">
+            <h3 class="text-xl font-semibold group-hover:text-yellow-400 text-gray-700 mb-2">
               MEDICAL SCHEME
             </h3>
-            <p class="text-gray-600">Our Health, Our Future</p>
+            <p class="text-gray-600 group-hover:text-white">Our Health, Our Future</p>
           </div>
 
           <div
-            class="bg-purple-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow"
+            class="bg-purple-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow hover:bg-[url('./cbhi.jpeg')] bg-cover group"
           >
             <img
               src="CHBI scheme.svg"
               alt="CHBI"
               class="w-16 h-16 mx-auto mb-4"
             />
-            <h3 class="text-xl font-semibold text-gray-700 mb-2">
+            <h3 class="text-xl font-semibold group-hover:text-yellow-400 text-gray-700 mb-2">
               CHBI SCHEME
             </h3>
-            <p class="text-gray-600">Giving You Happiness At Best Rate</p>
+            <p class="text-gray-600 group-hover:text-white">Giving You Happiness At Best Rate</p>
           </div>
 
           <div
-            class="bg-yellow-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow"
+            class="bg-yellow-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow hover:bg-[url('./ejo.png')] bg-cover group"
           >
             <img
               src="ejo heza.svg"
               alt="EJOHEZA"
               class="w-16 h-16 mx-auto mb-4"
             />
-            <h3 class="text-xl font-semibold text-gray-700 mb-2">EJOHEZA</h3>
-            <p class="text-gray-600">Start Early And Reap The Rewards.</p>
+            <h3 class="text-xl font-semibold group-hover:text-yellow-400 text-gray-700 mb-2">EJOHEZA</h3>
+            <p class="text-gray-600 group-hover:text-white">Start Early And Reap The Rewards.</p>
           </div>
 
           <div
-            class="bg-pink-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow"
+            class="bg-pink-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow hover:bg-[url('./matern.jpeg')] bg-cover group"
           >
             <img
               src="maternity leave.svg"
               alt="maternity"
               class="w-16 h-16 mx-auto mb-4"
             />
-            <h3 class="text-xl font-semibold text-gray-700 mb-2">
+            <h3 class="text-xl font-semibold group-hover:text-yellow-400 text-gray-700 mb-2">
               MATERNITY LEAVE
             </h3>
-            <p class="text-gray-600">
+            <p class="text-gray-600 group-hover:text-white">
               Enjoy Your Maternity Leave Without Your Full Salary
             </p>
           </div>
@@ -392,10 +339,11 @@
             Imisanzu today.
           </p>
           <button
-            class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 mb-4"
+            class="bg-blue-800 text-white border border-blue-800 font-bold px-12 py-4 rounded-lg hover:bg-white hover:text-blue-800 transition-colors"
           >
             Get Started
           </button>
+           
         </div>
         <div>
           <img
@@ -425,7 +373,11 @@
         <br />
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+ 
+          
+            
           <div class="p-8 rounded-lg shadow-md">
+                  <img src="going up.webp" alt="" class="H-10 w-9">   <br>    
             <h3 class="text-xl font-semibold text-gray-800 mb-4">
               Changing from Legacy processes and systems
             </h3>
@@ -438,7 +390,10 @@
             </p>
           </div>
 
+
+           
           <div class="p-8 rounded-lg shadow-md">
+            <img src="notes.png" alt="" class="h-10 w-14"> <br>
             <h3 class="text-xl font-semibold text-gray-800 mb-4">
               Non-paper based processes
             </h3>
@@ -452,6 +407,7 @@
           </div>
 
           <div class="p-8 rounded-lg shadow-md">
+             <img src="anti.webp" alt="" class="h-13 w-14"> <br>
             <h3 class="text-xl font-semibold text-gray-800 mb-4">
               Ensure the compliance rate in mandatory contributions
             </h3>
@@ -505,7 +461,8 @@
     <!-- News & Events -->
     <section class="py-16">
       <div class="mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+          <div class="ml-110 -mb-3 mt-12 w-10 h-1 bg-yellow-500"></div>
+        <h2 class="text-3xl font-bold text-center text-blue-800 mb-12 ">
           NEWS & EVENTS
         </h2>
 
